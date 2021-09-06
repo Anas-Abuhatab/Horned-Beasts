@@ -2,12 +2,21 @@ import React, { Component } from 'react'
 
  class HornedBeasts extends Component {
     render() {
+
+        let fav = 0;
+
+
         return (
             <>
-                <h2>HornedBeasts component</h2>
+                <h2>Title : {this.props.title}</h2>
 
-                <img src="../public/logo512.png" alt="img" title=""></img>
-                <p>Description</p>
+                <h3>Name : {this.props.keyword}</h3>
+
+                <img onClick={fav++} src={this.props.img} alt={this.props.title} title="animal"/>
+
+                <h3>#of Horns : {this.props.horns}</h3>
+
+                <p>Descreption : {this.props.descreption}</p>
 
               
             </>
