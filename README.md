@@ -89,18 +89,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 * Start time: 10:50
 
-* Finish time:
+* Finish time:02:00
 
-* Actual time needed to complete:
+* Actual time needed to complete:190 min
 
 ......................................................
-
-* Number and name of feature: 3 : Bootstrap
-
-* Estimate of time needed to complete: 1 H
-
-* Start time:
-
-* Finish time:
-
-* Actual time needed to complete:
