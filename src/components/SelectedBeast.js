@@ -1,23 +1,31 @@
 import React, { Component } from 'react';
-// import App from '../App';
 import {
     Card,
     Col
 } from 'react-bootstrap'
+import BsModal from './BsModal';
 
 
 class SelectedBeast extends Component {
     constructor(fav) {
         super(fav);
         this.state = {
-            fav: 0
+            fav: 0,
+            show:false,
         }
     }
 
     favFun = () => {
         this.setState({
-            fav: this.state.fav + 1
+            fav: this.state.fav + 1,
+            show:true
         });
+    }
+
+    handeClose=()=>{
+        this.setState({
+            show:false
+        })
     }
 
 
@@ -45,7 +53,7 @@ class SelectedBeast extends Component {
                         onClick={this.favFun} 
                         src={this.props.img} />
                         <Card.Body>
-                            <Card.Title>{this.props.keyword}</Card.Title>
+                            <Card.Title>Title: {this.props.keyword}</Card.Title>
                             <Card.Text>
                                  <h3>likes:&#128151;{this.state.fav}</h3>
                             </Card.Text>
@@ -53,6 +61,12 @@ class SelectedBeast extends Component {
                         </Card.Body>
                     </Card>
                 </Col>
+                <BsModal showModal={this.state.show}
+                         handeClose={this.handeClose} 
+                         keyword={this.props.keyword}
+                         title={this.props.title}
+                         img={this.props.img}
+                         descreption={this.props.descreption}/>
             </>
         )
     }

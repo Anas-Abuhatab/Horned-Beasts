@@ -94,3 +94,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * Actual time needed to complete:190 min
 
 ......................................................
+
+* Number and name of feature: 1 :  Display a Modal
+
+* Estimate of time needed to complete: 1 H
+
+* Start time: 
+
+* Finish time:
+
+* Actual time needed to complete:190 min
+
+......................................................
+
