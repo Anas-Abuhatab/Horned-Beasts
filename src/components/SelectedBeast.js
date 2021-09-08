@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // import App from '../App';
 import {
     Card,
-    Button,
     Col
 } from 'react-bootstrap'
 
