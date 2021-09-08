@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Data from './data.json';
-import HornedBeasts from './HornedBeasts';
+import SelectedBeast from './SelectedBeast';
 
 
 
@@ -16,10 +16,9 @@ class Main extends Component {
                         number of horns and chose your favorite image.</p>
 
                 
-                <div>{
+                <div className="row">{
                         Data.map(element =>{
-                            return <HornedBeasts kk={this.rise}
-                                                
+                            return <SelectedBeast 
                                                   horns={element.horns} 
                                                   title={element.title} 
                                                   descreption={element.description} 
