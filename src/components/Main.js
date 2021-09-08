@@ -6,29 +6,34 @@ import SelectedBeast from './SelectedBeast';
 
 
 class Main extends Component {
-    
-    render() {   
+
+
+    render() {
+
         return (
             <>
                 <h1>Horned Beasts </h1>
-                    <p> displays images and information of horned animals. 
-                        This application will allow you to filter the images by 
-                        number of horns and chose your favorite image.</p>
+                <p> displays images and information of horned animals.
+                    This application will allow you to filter the images by
+                    number of horns and chose your favorite image.</p>
 
-                
+
                 <div className="row">{
-                        Data.map(element =>{
-                            return <SelectedBeast 
-                                                  horns={element.horns} 
-                                                  title={element.title} 
-                                                  descreption={element.description} 
-                                                  keyword={element.keyword} 
-                                                  img={element.image_url}/>
-                        })
-                      }
-                </div>   
-                
-          </>
+                    Data.map(element => {
+                        return <SelectedBeast
+                            horns={element.horns}
+                            title={element.title}
+                            descreption={element.description}
+                            keyword={element.keyword}
+                            img={element.image_url} />
+                    })
+
+                }
+                </div>
+
+
+
+            </>
         )
     }
 }
