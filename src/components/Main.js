@@ -36,7 +36,7 @@ class Main extends Component {
                     {
 
                     Data.map(element => {
-                       return  element.horns==this.state.speciality&&<SelectedBeast
+                       return  element.horns===Number(this.state.speciality)&&<SelectedBeast
                             horns={element.horns}
                             title={element.title}
                             descreption={element.description}
@@ -44,7 +44,10 @@ class Main extends Component {
                             img={element.image_url} />
                              }) 
                     }
-                </div>
+                </div>{
+                    
+
+                }
                             
 
 
